@@ -103,6 +103,8 @@ group :test do
   gem "selenium-webdriver", "~> 2.53.4"
 end
 
+gem 'appengine' # GCP app engine用
+
 local_gemfile = File.join(File.dirname(__FILE__), "Gemfile.local")
 if File.exists?(local_gemfile)
   eval_gemfile local_gemfile
