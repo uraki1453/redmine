@@ -7,4 +7,4 @@ steps:
     args:
     - app
     - deploy
-    - --image-url=asia.gcr.io/idea-storming01/appengine:1
+    - --image-url=asia.gcr.io/idea-storming01/appengine
