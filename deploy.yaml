@@ -1,10 +1,10 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ["build", "-t", "gcr.io/idea-storming01/redmine", "."]
+    args: ["build", "-t", "gcr.io/idea-storming01/appengine", "."]
   - name: 'gcr.io/cloud-builders/docker'
-    args: ["push", "gcr.io/idea-storming01/redmine"]
+    args: ["push", "gcr.io/idea-storming01/appengine"]
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
     - app
     - deploy
-    - --image-url=gcr.io/idea-storming01/redmine:12345
+    - --image-url=gcr.io/idea-storming01/appengine:1
