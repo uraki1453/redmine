@@ -4,7 +4,7 @@ steps:
   # - name: 'gcr.io/cloud-builders/docker'
   #   args: ["push", "gcr.io/$PROJECT_ID/appengine"]
   # - name: 'gcr.io/cloud-builders/gcloud'
-    args:
-    - app
-    - deploy
-    - --image-url=asia.gcr.io/idea-storming01/appengine
+  args:
+  - app
+  - deploy
+  - --image-url=asia.gcr.io/idea-storming01/appengine
